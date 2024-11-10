@@ -1,6 +1,6 @@
 {
 	"name": "@nasontech/nuxt-update-available",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "React to app updates",
 	"repository": {
 		"type": "git",
