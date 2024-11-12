@@ -7,8 +7,8 @@
 
 React to app updates.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-- [🏀 Online playground](https://stackblitz.com/github/@nasontech/nuxt-update-available?file=playground%2Fapp.vue)
+-   [✨ &nbsp;Release Notes](/CHANGELOG.md)
+<!-- - [🏀 Online playground](https://stackblitz.com/github/@nasontech/nuxt-update-available?file=playground%2Fapp.vue) -->
 
 ## Features
 
@@ -24,23 +24,31 @@ npx nuxi module add @nasontech/nuxt-update-available
 
 That's it! You can now use `useUpdateAvailable()` in your Nuxt app ✨
 
+Set the check interval in your nuxt config
+
+```javascript
+    experimental: {
+        checkOutdatedBuildInterval: 1000 * 5, // 5 seconds
+    }
+```
+
 ```vue
 <script setup lang="ts">
 const { updateAvailable } = useUpdateAvailable()
 </script>
 
 <template>
-	<div>
-		<NuxtRouteAnnouncer />
+    <div>
+        <NuxtRouteAnnouncer />
 
-		<NuxtLayout>
-			<NuxtPage />
-		</NuxtLayout>
+        <NuxtLayout>
+            <NuxtPage />
+        </NuxtLayout>
 
-		<ClientOnly>
-			<UpdateDialog :open="updateAvailable" />
-		</ClientOnly>
-	</div>
+        <ClientOnly>
+            <UpdateDialog :open="updateAvailable" />
+        </ClientOnly>
+    </div>
 </template>
 ```
 
