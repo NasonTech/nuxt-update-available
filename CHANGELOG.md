@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://undefined/undefined/compare/v0.0.1...v0.0.2)
+
+### 🩹 Fixes
+
+- Ref import in composable (c61a88c)
+
+### ❤️ Contributors
+
+- Brandon Nason <brandon.nason@gmail.com>
+
 ## v0.0.1
 
 
